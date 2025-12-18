@@ -1,8 +1,12 @@
-def reverse_num(num):
-    rev = 0
-    while num > 0:
-        rev = rev * 10 + num % 10
-        num //= 10
-    print("Reverse number:", rev)
+def rev_func(num):
+      rev=0
+      temp=num
+      while temp>0:
+            digit=temp%10
+            rev=rev*10+digit 
+            temp//=10
+      return rev  
 
-reverse_num(1234)
+num=int(input("Enter the num: "))
+result=rev_func(num)
+print(f"The rev is :{result}")
