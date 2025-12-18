@@ -1,11 +1,13 @@
 #a
 def sum_n(n):
-    s = 0
+    total = 0
     for i in range(1, n+1):
-        s += i
-    print("Sum:", s)
+        total += i
+    return total
 
-sum_n(5)
+n = int(input("Enter the value of n: "))
+result = sum_n(n)
+print("Sum of numbers from 1 to", n, "is:", result)
 
 #b
 def fact_sum(n):
@@ -27,4 +29,5 @@ def power_sum(n):
     print("Power sum:", s)
 
 power_sum(3)
+
 
