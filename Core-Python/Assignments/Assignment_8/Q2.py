@@ -1,5 +1,9 @@
-def area_circle(r):
-    area = 3.14 * r * r
-    print("Area of circle:", area)
+import math
 
-area_circle(7)
+def area_circle(r):
+    area=math.pi*(r**2)
+    return f"Area of circle is: {area}"
+
+r=int(input("Enter the radius of circle: "))
+result=area_circle(r)
+print(result)
