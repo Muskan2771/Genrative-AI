@@ -1,6 +1,7 @@
-def reverse(num, rev=0):
-    if num == 0:
+def reverse_num(n, rev=0):
+    if n == 0:
         return rev
-    return reverse(num//10, rev*10 + num%10)
+    return reverse_num(n // 10, rev * 10 + n % 10)
 
-print(reverse(5678))
+num = int(input("Enter number: "))
+print("Reversed number:", reverse_num(num))
