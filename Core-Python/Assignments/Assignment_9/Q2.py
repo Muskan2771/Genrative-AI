@@ -1,11 +1,17 @@
-def armstrong(num, temp, s=0):
-    if num == 0:
-        return s == temp
-    d = num % 10
-    return armstrong(num//10, temp, s + d*d*d)
+def count_digits(n):
+    if n == 0:
+        return 0
+    return 1 + count_digits(n // 10)
 
-n = 153
-if armstrong(n, n):
-    print("Armstrong Number")
+def armstrong_sum(n, digits):
+    if n == 0:
+        return 0
+    return (n % 10) ** digits + armstrong_sum(n // 10, digits)
+
+num = int(input("Enter a number: "))
+digits = count_digits(num)
+
+if num == armstrong_sum(num, digits):
+    print(num, "is an Armstrong number")
 else:
-    print("Not Armstrong")
+    print(num, "is not an Armstrong number")
