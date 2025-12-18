@@ -1,13 +1,15 @@
-def sum_prime(n):
+def sum_primes(n):
     total = 0
-    for num in range(2, n+1):
-        flag = True
-        for i in range(2, num):
-            if num % i == 0:
-                flag = False
+    for i in range(2, n+1):
+        is_prime = True
+        for j in range(2, int(i**0.5)+1):
+            if i % j == 0:
+                is_prime = False
                 break
-        if flag:
-            total += num
-    print("Sum of prime numbers:", total)
+        if is_prime:
+            total += i
+    return total
 
-sum_prime(10)
+n = int(input("Enter n value: "))
+result = sum_primes(n)
+print("Sum of all prime numbers from 1 to", n, "is:", result)
