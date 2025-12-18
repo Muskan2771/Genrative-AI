@@ -1,5 +1,9 @@
-def area_rectangle(l, b):
+def rect(l, b):
     area = l * b
-    print("Area of rectangle:", area)
+    return area
 
-area_rectangle(5, 4)
+l = int(input("Enter the length of rectangle: "))
+b = int(input("Enter the breadth of rectangle: "))
+
+result = rect(l, b)
+print("Area of rectangle is:", result)
