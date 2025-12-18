@@ -22,12 +22,15 @@ def fact_sum(n):
 fact_sum(4)
 
 #c
-def power_sum(n):
-    s = 0
+def sum_power_series(n):
+    sum_s = 0
     for i in range(1, n+1):
-        s += i ** i
-    print("Power sum:", s)
+        sum_s += i**i
+    return sum_s
 
-power_sum(3)
+n = int(input("Enter n value: "))
+result = sum_power_series(n)
+print("Sum of series 1^1 + 2^2 + ... + n^n is:", result)
+
 
 
