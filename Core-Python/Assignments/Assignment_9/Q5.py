@@ -1,6 +1,7 @@
-def factorial(n):
-    if n == 1:
+def fact(n):
+    if n == 0 or n == 1:   
         return 1
-    return n * factorial(n-1)
+    return n * fact(n - 1)  
 
-print(factorial(5))
+num = int(input("Enter the number: "))
+print("Factorial:", fact(num))
