@@ -1,6 +1,8 @@
-def reverse_num(num, rev=0):
-    if num == 0:
+def rev_digits(n,rev=0):
+    if n == 0:
         return rev
-    return reverse_num(num//10, rev*10 + num%10)
-
-print(reverse_num(1234))
+    rev=rev*10+n%10
+    return rev_digits(n//10,rev) 
+n=int(input("Enter the number: "))
+result=rev_digits(n)
+print(result)
