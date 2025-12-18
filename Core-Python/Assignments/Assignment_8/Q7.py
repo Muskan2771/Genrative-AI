@@ -1,8 +1,12 @@
-def sum_digits(num):
-    s = 0
-    while num > 0:
-        s += num % 10
-        num //= 10
-    print("Sum of digits:", s)
+def sum_digit(num):
+    temp=num
+    total=0
+    while temp>0:
+          digit=temp%10
+          temp//=10
+          total+=digit
+    return total   
 
-sum_digits(123)
+num=int(input("Enter the number: "))
+result=sum_digit(num)   
+print("The sum of digit is: ",result)  
