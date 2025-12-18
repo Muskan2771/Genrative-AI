@@ -1,6 +1,8 @@
-def sum_n(n):
+def total(n):
     if n == 0:
         return 0
-    return n + sum_n(n-1)
+    return n+total(n-1) 
 
-print(sum_n(5))
+n=int(input("Enter the number: "))
+result=total(n)
+print(result)
