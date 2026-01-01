@@ -1,0 +1,21 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding: 5px;
+}
+p{
+    color: rgb(20, 19, 18);
+}
+#resume{
+    text-align: center;
+}
+.grp{
+    font-style:oblique;
+    background-color: aqua;
+}
+.name{
+    color:red;
+}
+h3,h4,h5{
+    color:rgb(77, 11, 207)
+}
