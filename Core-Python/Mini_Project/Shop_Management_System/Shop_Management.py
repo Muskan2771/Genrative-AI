@@ -180,7 +180,8 @@ if login():
         elif choice == 5:
             delete_product(products)
         elif choice == 6:
-            print("Thank you 😊")
+            print("Thank you")
             break
         else:
             print("Invalid choice")
+
